@@ -1,0 +1,40 @@
+﻿@model IEnumerable<ExamenFinalCalidadJCGM.Models.Cuenta>
+
+@{ ViewData["Title"] = "Lista de Cuentas"; }
+
+<div class="container">
+    <div class="row ">
+        
+        <div class="col-sm-2">
+            <a class="btn btn-success d-block" id="agregarNuevaCuenta" asp-action="create" asp-controller="Cuenta">Crear Cuenta</a>
+        </div>
+    </div>
+
+
+    <div class="row mt-6 ">
+        <div class="col-sm-12">
+            
+<table  class="default" id="datatable">
+    <thead >
+        <tr>
+            <td>Nombre</td>
+            <td>Categoria</td>
+            <td>Monto</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+<tr>
+    <td>@item.Nombre</td>
+    <td>@item.Categoria</td>
+    <td>@item.SaldaInicisl</td>
+
+
+</tr>
+}
+    </tbody>
+</table> 
+        </div>
+    </div>
+</div>
