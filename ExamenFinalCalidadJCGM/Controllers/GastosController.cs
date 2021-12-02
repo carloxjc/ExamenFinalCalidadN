@@ -35,6 +35,13 @@ namespace ExamenFinalCalidadJCGM.Controllers
         [HttpPost]
         public IActionResult Create(GastosC gastos)
         {
+            var cuen = interfaceCuenta.cuenta(gastos.Id);
+
+            if (gastos.Monto > cuen.SaldaInicisl)
+            {
+                return RedirectToAction("Index");
+            }
+
             if (ModelState.IsValid)
             {
 

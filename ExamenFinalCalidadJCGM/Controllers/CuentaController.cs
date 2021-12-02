@@ -33,6 +33,8 @@ namespace ExamenFinalCalidadJCGM.Controllers
         [HttpPost]
         public IActionResult Create(Cuenta cuenta)
         {
+            
+
             if (ModelState.IsValid)
             {
                 cuentaI.CraerCuenta(cuenta);

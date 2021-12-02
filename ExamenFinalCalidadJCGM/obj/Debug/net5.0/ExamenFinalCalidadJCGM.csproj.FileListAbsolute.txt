@@ -149,3 +149,4 @@ C:\Users\LENOVO\source\repos\ExamenFinalCalidadJCGM\ExamenFinalCalidadJCGM\obj\D
 C:\Users\LENOVO\source\repos\ExamenFinalCalidadJCGM\ExamenFinalCalidadJCGM\obj\Debug\net5.0\Razor\Views\Ingresos\Create.cshtml.g.cs
 C:\Users\LENOVO\source\repos\ExamenFinalCalidadJCGM\ExamenFinalCalidadJCGM\obj\Debug\net5.0\Razor\Views\Ingresos\Index.cshtml.g.cs
 C:\Users\LENOVO\source\repos\ExamenFinalCalidadJCGM\ExamenFinalCalidadJCGM\obj\Debug\net5.0\Razor\Views\Gastos\Index.cshtml.g.cs
+C:\Users\LENOVO\source\repos\ExamenFinalCalidadJCGM\ExamenFinalCalidadJCGM\obj\Debug\net5.0\ExamenFinalCalidadJCGM.csproj.AssemblyReference.cache

@@ -23,6 +23,10 @@ namespace ExamenFinalCalidadJCGM.Repositoria
             DbContextExamen.SaveChanges();
         }
 
+        public Cuenta cuenta(int id)
+        {
+            return DbContextExamen.Cuenta.Where(a => a.Id == id).FirstOrDefault();
+        }
 
         public List<Cuenta> ListarCuenta()
         {
@@ -30,13 +34,15 @@ namespace ExamenFinalCalidadJCGM.Repositoria
 
             return DbContextExamen.Cuenta.ToList();
         }
+
+        
     }
 
     public interface InterfaceCuenta
     {
         List<Cuenta> ListarCuenta();
         void CraerCuenta(Cuenta cuenta);
-        
+        Cuenta cuenta(int id);
 
     }
 
